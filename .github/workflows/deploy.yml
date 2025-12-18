@@ -19,9 +19,9 @@ jobs:
     
     # Step : 특정 작업을 수행하는 가장 작은 단위
     # Job은 여러 Step들로 구성되어 있다.
+	# run 은 셸로 진행한다는 의미
     steps: 
       - name: Hello World 찍기 # Step에 이름 붙이는 기능
-        # run 은 셸로 진행한다는 의미
         run: echo "Hello World" # 실행시킬 명령어 작성
         
       - name: 여러 명령어 문장 작성하기
