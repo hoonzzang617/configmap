@@ -7,6 +7,8 @@ on:
 
 env:
   NAME: SXP
+  USERNAME: kosa
+  USER_PASSWORD_ENV: ${{ secrets.USER_PASSWORD }}
 
 
 jobs: 
@@ -39,3 +41,9 @@ jobs:
           
       - name: TEST
         run: echo $NAME
+
+      - name: 시크릿 USER_PASSWORD 출력
+        run: | 
+          echo "USER_PASSWORD = ${{ env.USER_PASSWORD_ENV }}"
+          echo "USER_PASSWORD = ${{ secrets.USER_PASSWORD }}"
+          echo "USER_PASSWORD = $USER_PASSWORD_ENV"
