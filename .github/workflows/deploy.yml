@@ -22,8 +22,6 @@ jobs:
 
       - name: config update 배포
         run: sh run.sh
-
-      - 
   # my-build-Job:
   #   runs-on: self-hosted
 
