@@ -15,7 +15,7 @@ jobs:
   on-k8s:
     runs-on: self-hosted
 
-    setps:
+    steps:
 
       - name: 소스코드 복사 
         uses: actions/checkout@v3
