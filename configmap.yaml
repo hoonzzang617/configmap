@@ -3,5 +3,5 @@ kind: ConfigMap
 metadata:
   name: my-app-config
 data:
-  GREETING: "수정 ! 안녕하세요~~~~" # 변경
-  MESSAGE: "수정 ! 쿠버네티스~~~~" # 변경
+  GREETING: "Hello!!!!" # 변경
+  MESSAGE: "K8S!!!!!!!!" # 변경
